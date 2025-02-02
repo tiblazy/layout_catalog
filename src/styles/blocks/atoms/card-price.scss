@@ -14,8 +14,6 @@
     }
 
     .price__value {
-      margin-top: -0.5px;
-
       @include font-mixin(16px, 700, 18px);
     }
   }
