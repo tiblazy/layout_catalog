@@ -7,11 +7,6 @@
 @use './atoms/card-btn' as *;
 @use './atoms/font-mixin' as *;
 
-.catalog__container {
-  height: 100vh;
-  padding: 50px 40px;
-}
-
 .card {
   width: 200px;
   padding: 32px 16px 16px;
