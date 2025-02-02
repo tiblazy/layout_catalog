@@ -1,0 +1,22 @@
+@use '../../variables' as *;
+@use '../atoms/font-mixin' as *;
+
+@mixin card-price {
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .price__name {
+      color: $font-secondary-color;
+
+      @include font-mixin(12px, 400, 18px);
+    }
+
+    .price__value {
+      margin-top: -0.5px;
+
+      @include font-mixin(16px, 700, 18px);
+    }
+  }
+}

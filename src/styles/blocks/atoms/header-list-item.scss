@@ -1,4 +1,5 @@
 @use '../../variables' as *;
+@use '../atoms/font-mixin' as *;
 
 @mixin list-item {
   .list__item {
@@ -8,13 +9,12 @@
     height: 60px;
     margin-left: 20px;
     color: $link-main-color;
-    font-size: 12px;
-    line-height: $link-line-height;
-    font-weight: 500;
+
+    @include font-mixin(12px, 500, $link-line-height);
+
     text-transform: uppercase;
     white-space: nowrap;
     cursor: pointer;
-    transition: all 0.3s;
     &:first-child {
       margin-left: 0;
     }
