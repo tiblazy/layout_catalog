@@ -76,8 +76,30 @@ a {
 }
 
 .catalog__container {
-  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1);
+  gap: 46px 48px;
+  justify-content: center;
+  align-items: center;
   padding: 50px 40px;
+}
+
+@media (min-width: 488px) {
+  .catalog__container {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog__container {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog__container {
+    grid-template-columns: repeat(4, 200px);
+  }
 }
 
 .card {
